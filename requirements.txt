@@ -1,0 +1,7 @@
+vkbottle==4.11.0
+python-dotenv==1.2.4
+# vkbottle 4.11 falls back to stdlib logging without loguru and hits a bug
+# in its runner (StyleAdapter has no .opt), masking real polling errors.
+loguru==0.7.3
+# CA-бандл: системные сертификаты Windows не всегда проверяют api.vk.ru.
+certifi==2026.10.23
